@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'de1512ccd2ab252194a106f11b0c59781ab4d393',
+        'reference' => '57fec824100475e7a6429908967b6813786bb36c',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'de1512ccd2ab252194a106f11b0c59781ab4d393',
+            'reference' => '57fec824100475e7a6429908967b6813786bb36c',
             'dev_requirement' => false,
         ),
         'clue/socket-raw' => array(
