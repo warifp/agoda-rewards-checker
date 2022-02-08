@@ -1,5 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
+include 'config.php';
 
 use NdCaptcha\NdCaptcha;
 use Curl\Curl;
@@ -134,6 +135,12 @@ function writeLog($location, $text, $config)
 
 // init class
 $agoda = new Agoda;
+
+if ((empty($list)) || (empty($captchaKey))) {
+    echo "Please provide email list and password, 2Captcha Key in config.php file.\n";
+    exit;
+}
+
 $file = file_get_contents("$list");
 $datas = explode("\r\n", $file);
 
